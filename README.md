@@ -1,6 +1,6 @@
 # HighCharts Playground#
 
-## Commands to Start ##
+### Commands to Start ###
 
 * npm install
 * bower install
