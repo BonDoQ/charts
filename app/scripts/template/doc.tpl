@@ -63,7 +63,6 @@
         <h3>How To Start</h3>
         <ul>
             <li>npm install</li>
-            <li>grunt install</li>
             <li>bower install</li>
             <li>grunt server</li>
             <li>main.js</li>
