@@ -1,0 +1,124 @@
+// Main sass file
+
+@import "../bower_components/unsemantic/assets/sass/reset";
+@import "../bower_components/unsemantic/assets/sass/text";
+@import "../bower_components/unsemantic/assets/sass/unsemantic-grid-responsive";
+
+body {
+    background: #FFF;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #333;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.brand {
+    float: left;
+    padding:0 24px ;
+    margin-left: -24px;
+    margin-top: -4px;
+}
+
+nav {
+    margin-bottom: 24px;
+}
+footer {
+    margin-top: 74px;
+}
+
+.nav {
+    height: 30px;
+    padding: 12px 0;
+
+    ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+
+        li {
+            padding: 0;
+            margin: 0;
+            float: left;
+
+            a {
+                display: block;
+                padding: 6px 18px;
+                text-decoration: none;
+                border-radius: 4px;
+            }
+        }
+    }
+
+    &.nav-light {
+        color: #333;
+        background: #eee;
+
+        li a {
+            color: #333;
+        }
+    }
+    &.nav-dark {
+        color: #eee;
+        background: #333;
+
+        li a {
+            color: #eee;
+
+            &:hover {
+                background: #000;
+            }
+        }
+    }
+}
+
+.chart-instance {
+    > div {
+        margin-top: 48px;
+        padding-bottom: 24px;
+        position: relative;
+        border-bottom: 1px solid #eee;
+
+        .highcharts-title {
+         cursor: pointer;
+        }
+    }
+    &.single {
+        a.icon {
+            display: none;
+        }
+    }
+    a.icon {
+        position: absolute;
+        left: 0;
+        bottom:     0;
+        display: block;
+        //width: 20px;
+        height: 20px;
+        color: 	#6E6E6E;
+    }
+    .input-form {
+        position: absolute;
+        z-index: 200;
+        right: 0;
+        top: 8px;
+        width: 70%;
+        left: 0;
+        margin: 0 auto;
+
+        input, button {
+            padding: 4px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+
+        input {
+            width: 75%;
+        }
+        button {
+            width: 50px;
+            cursor: pointer;
+        }
+    }
+}
